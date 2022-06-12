@@ -1,7 +1,7 @@
 
 import pyrosim.pyrosim as pyrosim
 
-pyrosim.Start_SDF ( "box.sdf" )
+pyrosim.Start_SDF ( "boxes.sdf" )
 
 # Cube's physical dimensions
 length = 1
@@ -14,5 +14,5 @@ y = 0
 z = height/2
 
 pyrosim.Send_Cube ( name="Box", pos=[x, y, z], size=[length, width, height] )
-
+pyrosim.Send_Cube ( name="Box", pos=[x, y, z], size=[length, width, height] )
 pyrosim.End ()
