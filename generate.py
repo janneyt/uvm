@@ -13,6 +13,8 @@ x = 0
 y = 0
 z = height/2
 
-pyrosim.Send_Cube ( name="Box", pos=[x, y, z], size=[length, width, height] )
-pyrosim.Send_Cube ( name="Box", pos=[x, y, z], size=[length, width, height] )
+for num in range(0,10):
+    pyrosim.Send_Cube ( name="Box"+str(num), pos=[x, y , z+ (height * num)], size=[length-(num/10), width-(num/10), height] )
+
+
 pyrosim.End ()
